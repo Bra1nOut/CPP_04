@@ -8,9 +8,9 @@ int main()
 	std::cout << std::endl;
 	const Animal* a = new Dog();
 	const Animal* b = new Cat();
-	const Animal* c = new Animal();
+	// const Animal* c = new Animal(); // NOT POSSIBLE (That's why its in comment). Here just to show it
 	std::cout << std::endl;
-	delete a; delete b; delete c;
+	delete a; delete b;
 
 	std::cout << std::endl;
 	std::cout << "// ------ TEST 2 ------ \\\\" << std::endl;
