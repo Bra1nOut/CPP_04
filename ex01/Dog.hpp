@@ -1,0 +1,15 @@
+#pragma once
+
+#include "Cat.hpp"
+#include "Brain.hpp"
+
+class Dog : public Animal {
+private:
+	Brain *brain;
+public:
+	Dog();
+	~Dog();
+	Dog(const Dog& copy);
+	Dog& operator=(const Dog& other);
+	void makeSound() const;
+};
