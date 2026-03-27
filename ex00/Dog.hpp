@@ -1,3 +1,5 @@
+#pragma once
+
 #include "Cat.hpp"
 
 class Dog : public Animal {
