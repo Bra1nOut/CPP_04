@@ -1,21 +1,21 @@
 #include "Character.hpp"
 
 Character::Character() : _Name("default"), _StockIndex(0) {
-	for (int i = 0; i < 4; i++)
+	for (int i = 0; i < 4; ++i)
 		_Inventory[i] = NULL;
-	for (int i = 0; i < 10; i++)
+	for (int i = 0; i < 10; ++i)
 		_Stock[i] = NULL;
 }
 
 Character::Character(std::string name) : _Name(name), _StockIndex(0) {
-	for (int i = 0; i < 4; i++)
+	for (int i = 0; i < 4; ++i)
 		_Inventory[i] = NULL;
-	for (int i = 0; i < 10; i++)
+	for (int i = 0; i < 10; ++i)
 		_Stock[i] = NULL;
 }
 
 Character::~Character() {
-	for (int i = 0; i < 4; i++)
+	for (int i = 0; i < 4; ++i)
 	{
 		if (_Inventory[i])
 		{
@@ -23,7 +23,7 @@ Character::~Character() {
 			_Inventory[i] = NULL;
 		}
 	}
-	for (int i = 0; i < 10; i++)
+	for (int i = 0; i < _StockIndex; ++i)
 	{
 		if (_Stock[i])
 		{
@@ -41,7 +41,7 @@ Character::Character(const Character &copy) {
 		else
 			_Inventory[i] = NULL;
 	}
-	for (int i = 0; i < 100; ++i)
+	for (int i = 0; i < 10; ++i)
 		_Stock[i] = NULL;
 }
 

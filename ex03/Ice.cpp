@@ -5,9 +5,7 @@ Ice::Ice() : AMateria("ice") {}
 Ice::~Ice() {
 }
 
-Ice::Ice(const Ice &copy) {
-	*this = copy;
-}
+Ice::Ice(const Ice &copy) : AMateria(copy) {}
 
 Ice& Ice::operator=(const Ice &other) {
 	if (this != &other) {
