@@ -1,5 +1,5 @@
 #pragma once
- 
+
 #include <iostream>
 
 class ICharacter;
@@ -13,6 +13,7 @@ public:
 	AMateria(std::string const & type);
 	AMateria& operator=(const AMateria& other);
 	virtual ~AMateria();
+	
 	std::string const & getType() const;
 	virtual AMateria* clone() const = 0;
 	virtual void use(ICharacter& target);

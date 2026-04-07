@@ -1,10 +1,11 @@
 #pragma once
- 
+
 #include "AMateria.hpp"
+#include "ICharacter.hpp"
 
 class Ice : public AMateria {
 private:
-	
+	std::string _Type;
 public:
 	Ice();
 	virtual ~Ice();

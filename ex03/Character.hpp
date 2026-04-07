@@ -10,6 +10,7 @@ private:
 	std::string _Name;
 public:
 	Character();
+	Character(std::string name);
 	~Character();
 	Character(const Character& copy);
 	Character& operator=(const Character& other);
