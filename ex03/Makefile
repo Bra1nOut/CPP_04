@@ -15,8 +15,7 @@ NC = \033[0m
 
 SRCS =	main.cpp \
 		AMateria.cpp \
-		ICharacter.cpp \
-		IMateriaSource.cpp \
+		MateriaSource.cpp \
 		Character.cpp \
 		Ice.cpp \
 		Cure.cpp \
