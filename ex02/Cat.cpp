@@ -12,7 +12,7 @@ Cat::~Cat() {
 }
 
 Cat::Cat(const Cat &copy) : Animal(copy){
-	*this = copy;
+	brain = new Brain(*copy.brain);
 }
 
 Cat& Cat::operator=(const Cat &other) {

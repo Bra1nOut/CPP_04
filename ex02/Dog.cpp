@@ -14,7 +14,7 @@ Dog::~Dog() {
 }
 
 Dog::Dog(const Dog &copy) : Animal(copy) {
-	*this = copy;
+	brain = new Brain(*copy.brain);
 }
 
 Dog& Dog::operator=(const Dog &other) {
